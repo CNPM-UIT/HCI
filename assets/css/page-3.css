@@ -1,0 +1,91 @@
+
+#search-field{
+    height: 36px;
+    width: 370px;
+}
+.btn-signin{
+    color: #0070eb;
+    border-color: rgba(67,41,163,.2);
+    font-size: 13px;
+    font-family: bold;
+}
+.border-color{
+    border-color: rgba(67,41,163,.2);
+    border-style: solid;
+    border-width: 1px;
+    
+}
+.star-color{
+    color: #0070eb;
+}
+.star{
+    color: #F4AF30;
+}
+.top-shadow{
+    box-shadow: 0 0 0 1px rgba(67,41,163,.1), 0 1px 8px 0 rgba(67,41,163,.1);
+}
+.cuisine{
+    font-size: 12px;
+    color: #6b6b83;
+}
+.text-sm{
+    color: #000;
+}
+.loai-mon{
+    width: 119px;
+    height: 119px;
+    border-radius: 50%;
+    margin: 0px 20.5px
+}
+.cuisine-m{
+    margin-bottom: 8px;
+    
+}
+.box-p{
+    padding: 12px 16px;
+}
+.unit{
+    height: 115px;
+    padding: 12px 0px 10px 24px;
+}
+.filter-m{
+    margin-bottom: 35px;
+}
+.logo{
+    width: 80px;
+    max-height: 80px;
+}
+.border-logo{
+    box-shadow:  0 0 0 1px rgba(67,41,163,.08), 0 1px 5px 0 rgba(67,41,163,.08);
+    margin-top: -46px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.menu-page{
+    border-bottom: 3px solid #0070eb;
+    padding: 10px 0;
+    font-size: 15.4px;
+}
+.menu-margin{
+    margin-right: 15px;
+}
+.top-menu{
+    height: 127px; 
+    width: 520px; 
+    background-image: url(assets/img/dish/k9huj4yovzyd7lofwdkf.webp); 
+    background-position: 50%;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    border-radius : 3px;
+}
+.box-cost{
+    margin: 10px;
+    padding: 5px;
+    background-color: hsla(0,0%,100%,.75);
+    border-radius: 3px;
+    font-size: 15.4px;
+    color: #000;
+}
