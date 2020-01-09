@@ -49,7 +49,7 @@
     margin-right:7px
 }
 .background-2{
-    background-image:url("/assets/img/women-eating-burgers-delivery-v3.png?h=71cfcbff306df48b597bc93f46fbc2c9");
+    background-image:url("assets\img\women-eating-burgers-delivery-v3.png");
 }
 @media (min-width: 576px) {
      .margin-1 {
@@ -314,7 +314,7 @@
      border-bottom: 1px solid #ccc;
 }
 .background {
-     background-image: url("/assets/img/food_delivery_.jpg?h=fffd42fd95f0d0b0107956a2d5ddd9f3")
+     background-image: url("assets\img\food_delivery_.jpg")
 }
 .canhbien{
      margin-top:3vh
@@ -343,16 +343,77 @@
     }
 }
 .khung-1{
-    height:300px
+    height:calc(40vh-10vh)
 }
-.tieude{
-    font-size: 20.3px;
+
+@media (max-width: 320px){
+     .responsiveFooter{
+          font-size: 17px;
+          font-weight: bold;
+          color: #eaeaf3;
+     }
 }
+@media (min-width: 320px){
+     .headerClass{
+          font-size: 20px;
+          margin-bottom: 16px
+     }
+     .tieude{
+          font-size: 20px;
+     }
+     .responsiveFooter{
+          font-size: 20px;
+          font-weight: bold;
+          color: #eaeaf3;
+
+     }
+     .responsiveFont{
+          font-size: 40px;
+     }
+}
+.responsiveBody{
+     height: calc(60vh - 60px);
+}
+@media (min-width: 576px){
+     .responsiveBody{
+          height: calc(70vh - 60px);
+     }
+     .responsiveFooter{
+          font-size: 20px;
+          font-weight: bold;
+          color: #eaeaf3;
+     }
+     .responsiveFont{
+          font-size: 55px;
+     }
+}
+
+@media (min-width: 992px){
+     .headerClass{
+          font-size: 50px;
+          margin-bottom: 16px
+          
+     }
+     .tieude{
+          font-size: 40px;
+     }
+     .responsiveFont{
+          font-size: 70px;
+     }
+     .responsiveFooter{
+          font-size: 28px;
+          font-weight: bold;
+          color: #eaeaf3;
+     }
+
+}
+
 .noidung{
     font-size: 14px;
 }
 .size-khuvuc{
-     font-size: calc(30px + 1vw);
+     font-size: calc(20px + 1vw);  
+     font-weight: bold;
 }
 @media (min-width: 768px){
     .size-dk-dn{
