@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/page-3.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -22,14 +24,16 @@
     <div>
         <div class="sticky-top top-shadow" style="padding-left: 16px; padding-right: 32px">
             <div class="row" style="height: 60px; background-color: white;">
-                <div class="col-1 d-flex d-xl-flex justify-content-center align-items-center">
+                <div class="d-flex d-xl-flex justify-content-center align-items-center"
+                    style="max-width: 150px; padding-left: 12px;">
                     <h1 style="color: red;font-size: 26px;"><strong>FoodHUB</strong></h1>
                 </div>
                 <div class="col-8">
                     <div class="row d-flex align-items-center " style="height: 60px;">
-                        <div class="col-1 d-flex" style="margin-right: 26px">
+                        <div class="col-2 d-flex justify-content-center" style="margin-right: 26px">
                             <div><i class="material-icons" style="font-size: 18px; padding: 5px">location_on</i></div>
-                            <select class="js-example-basic-single border-white" style="font-family: graphik; font-size: 12px" name="state">
+                            <select class="js-example-basic-single border-white"
+                                style="font-family: graphik; font-size: 12px" name="state">
                                 <option value="AL">TP. HCM</option>
                                 <option value="WY">Hà Nội</option>
                                 <option value="WY">Đà Nẵng</option>
@@ -83,11 +87,12 @@
                                 <option value="WY">Sơn La</option>
                             </select>
                         </div>
-                        <div class="col-6">
-                            <div style="width: 380px;">
+                        <div class="col">
+                            <div>
                                 <div class="d-flex justity-content-start align-items-center">
                                     <i class="fa fa-search" style="padding: 5px"></i>
-                                    <input class="form-control" style="font-size: 15px" type="text" placeholder="Pizza, sushi, noodles" aria-label="Search">
+                                    <input class="form-control" style="font-size: 15px" type="text"
+                                        placeholder="Pizza, sushi, noodles" aria-label="Search">
                                 </div>
                             </div>
                         </div>
@@ -95,10 +100,18 @@
                 </div>
                 <div class="col d-flex text-center d-flex justify-content-end align-items-center" style="padding: 4px;">
                     <div class="d-flex align-items-center">
-                        <button class="btn btn-outline-light col-8 btn-signin" type="button" style="color: 0070eb;">
+                        <button class="btn btn-outline-light col-8 btn-signin" type="button" style="color: #0070eb;">
                             <strong>Sign In </strong>
                         </button>
-                        <i class="fa fa-shopping-basket align-items-center col-3" style="font-size: 19px;"></i>
+                        <button class="btn align-items-center col-6 myPopover" type="button" data-toggle="popover"
+                            data-placement="bottom" data-trigger="focus" data-html="true"
+                            data-popover-content="#myPopoverContent">
+                            <i class="fa fa-shopping-basket " style="font-size: 19px;"></i>
+                        </button>
+                        <!-- Content for Popover: -->
+                        <div id="myPopoverContent" class="bag-border d-none">
+                            <h5 class="bag-empty-text">Your bag is empty.</h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,21 +121,59 @@
         <!--head end-->
         <div style="border-color: rgba(67,41,163,.2); border-bottom:1px solid rgba(67,41,163,.2);">
             <!--image background-->
-            <div style="background: url(assets/img/background/ezgif.com-webp-to-png.png); height: 100px; background-repeat: no-repeat; background-size: cover; height: 170px;">
+            <div
+                style="background: url(assets/img/background/ezgif.com-webp-to-png.png); height: 100px; background-repeat: no-repeat; background-size: cover; height: 170px;">
                 <div class="container h-100">
                     <div class="row">
                         <div class="col" style="padding: 12px;">
-                            <button class="text-center" style="height: 36px; width: 36px; border-radius: 50%; border: 0px; color: #0070eb; background-color: #fff;">
+                            <button class=" text-center"
+                                style="height: 36px; width: 36px; border-radius: 50%; border: 0px; color: #0070eb; background-color: #fff;"
+                                onclick="window.location.href = 'page-2.html'">
                                 <i class="fas fa-chevron-left" style="font-size: 20px;"></i>
                             </button>
                         </div>
                         <div class="col d-flex justify-content-end" style="padding: 12px;">
-                            <button class="text-center" style="height: 36px; width: 36px; border-radius: 50%; border: 0px; color:rgba(0,0,0,.35);background-color: #fff; margin-right: 12px;">
+                            <button class="text-center"
+                                style="height: 36px; width: 36px; border-radius: 50%; border: 0px; color:rgba(0,0,0,.35);background-color: #fff; margin-right: 12px;">
                                 <i class="fas fa-bookmark" style="font-size: 18px;"></i>
                             </button>
-                            <button class="text-center" style="height: 36px; width: 36px; border-radius: 50%; border: 0px; color: #0070eb; background-color: #fff;">
-                                <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
+                            <button class="text-center" data-toggle="modal" data-target="#share"
+                                style="height: 36px; width: 36px; border-radius: 50%; border: 0px; color: #0070eb; background-color: #fff;">
+                                <i class="fas fa-share-alt" style="font-size: 20px;"></i>
                             </button>
+                            <div class="modal fade" id="share" tabindex="-1" role="dialog"
+                                aria-labelledby="shareModelLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="shareModelLabel">Share Benvenuto Tribeca</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                                style="color: rgb(0, 112, 235)">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="share-border d-flex align-items-center">
+                                                <i class="fab fa-facebook icon-margin"></i>
+                                                <span class="share-text">Facebook</span>
+                                            </div>
+                                            <div class="share-border d-flex align-items-center">
+                                                <i class="fab fa-twitter-square icon-margin"></i>
+                                                <span class="share-text">Twitter</span>
+                                            </div>
+                                            <div class="share-border d-flex align-items-center">
+                                                <i class="fas fa-envelope icon-margin"></i>
+                                                <span class="share-text">Email</span>
+                                            </div>
+                                            <div class="share-border d-flex align-items-center">
+                                                <i class="fas fa-link icon-margin"></i>
+                                                <span class="share-text">Copy link</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -132,7 +183,7 @@
                 <div class="container w-100 h-100">
                     <div class="d-flex">
                         <div class="d-inline-block d-flex-row">
-                            <div class="text-sm" >
+                            <div class="text-sm">
                                 <h1 style="font-size: 30.8px; margin-bottom: 4px;">Benvenuto Tribeca</h1>
                             </div>
                             <div>
@@ -215,49 +266,133 @@
                         <div>
                             <!--1-->
                             <div class="row" style="margin-bottom: 5px;">
-                                <div class="w-50 col-6" style="padding: 4px;">
-                                    <div class="position-relative top-dish" style="height: 127px; background-image: url(assets/img/dish/k9huj4yovzyd7lofwdkf.webp); background-position: 50%;background-size: cover; background-repeat: no-repeat;border-radius: 3px; ">
+                                <div class="w-50 col-6" style="padding: 4px;" data-toggle="modal"
+                                    data-target="#address">
+                                    <div class="position-relative top-dish"
+                                        style="height: 127px; background-image: url(assets/img/dish/k9huj4yovzyd7lofwdkf.webp); background-position: 50%;background-size: cover; background-repeat: no-repeat;border-radius: 3px; ">
                                         <div class="w-100 h-100 d-flex align-items-end" style="padding: 8px;">
                                             <div class="position-absolute box-cost" style="left: 0; top: 41px;">
-                                                <span class="d-block"><a class="text-dark" href=""><strong>Fried Egg Sandwich</strong></a></span>
+                                                <span class="d-block"><a class="text-dark" href=""><strong>Fried Egg
+                                                            Sandwich</strong></a></span>
                                                 <span><a class="text-dark" href=""><strong>$3.50+</strong></a></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-50 col-6" style="padding: 4px;">
-                                    <div class="position-relative top-dish" style="height: 127px; background-image: url(assets/img/dish/k9huj4yovzyd7lofwdkf.webp); background-position: 50%;background-size: cover; background-repeat: no-repeat;border-radius: 3px; ">
+                                <div class="w-50 col-6" style="padding: 4px;" data-toggle="modal" data-target="#orderdish">
+                                    <div class="position-relative top-dish"
+                                        style="height: 127px; background-image: url(assets/img/dish/k9huj4yovzyd7lofwdkf.webp); background-position: 50%;background-size: cover; background-repeat: no-repeat;border-radius: 3px; ">
                                         <div class="w-100 h-100 d-flex align-items-end" style="padding: 8px;">
                                             <div class="position-absolute box-cost" style="left: 0; top: 41px;">
-                                                <span class="d-block"><a class="text-dark" href=""><strong>Fried Egg Sandwich</strong></a></span>
+                                                <span class="d-block"><a class="text-dark" href=""><strong>Fried Egg
+                                                            Sandwich</strong></a></span>
                                                 <span><a class="text-dark" href=""><strong>$3.50+</strong></a></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="w-50" style="padding: 4px;">
-                                    <div class="position-relative top-dish" style="height: 127px; background-image: url(assets/img/dish/k9huj4yovzyd7lofwdkf.webp); background-position: 50%;background-size: cover; background-repeat: no-repeat;border-radius: 3px; ">
+                                    <div class="position-relative top-dish"
+                                        style="height: 127px; background-image: url(assets/img/dish/k9huj4yovzyd7lofwdkf.webp); background-position: 50%;background-size: cover; background-repeat: no-repeat;border-radius: 3px; ">
                                         <div class="w-100 h-100 d-flex align-items-end" style="padding: 8px;">
                                             <div class="position-absolute box-cost" style="left: 0; top: 41px;">
-                                                <span class="d-block"><a class="text-dark" href=""><strong>Fried Egg Sandwich</strong></a></span>
+                                                <span class="d-block"><a class="text-dark" href=""><strong>Fried Egg
+                                                            Sandwich</strong></a></span>
                                                 <span><a class="text-dark" href=""><strong>$3.50+</strong></a></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="w-50" style="padding: 4px;">
-                                    <div class="position-relative top-dish" style="height: 127px; background-image: url(assets/img/dish/k9huj4yovzyd7lofwdkf.webp); background-position: 50%;background-size: cover; background-repeat: no-repeat;border-radius: 3px; ">
+                                    <div class="position-relative top-dish"
+                                        style="height: 127px; background-image: url(assets/img/dish/k9huj4yovzyd7lofwdkf.webp); background-position: 50%;background-size: cover; background-repeat: no-repeat;border-radius: 3px; ">
                                         <div class="w-100 h-100 d-flex align-items-end" style="padding: 8px;">
                                             <div class="position-absolute box-cost" style="left: 0; top: 41px;">
-                                                <span class="d-block"><a class="text-dark" href=""><strong>Fried Egg Sandwich</strong></a></span>
+                                                <span class="d-block"><a class="text-dark" href=""><strong>Fried Egg
+                                                            Sandwich</strong></a></span>
                                                 <span><a class="text-dark" href=""><strong>$3.50+</strong></a></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Modal adress -->
+                            <div class="modal fade" id="address" tabindex="-1" role="dialog"
+                                aria-labelledby="addressModelLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="addressModelLabel">Address</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                                style="color: rgb(0, 112, 235)">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">Address</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleFormControlInput1"
+                                                        placeholder="e,g. 555 Main St, New York NY 10018">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">Apt, suite, floor
+                                                        (optional)</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="e,g. 15F">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-primary">Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Model details dish-->
+                            <div class="modal fade" id="orderdish" tabindex="-1" role="dialog" aria-labelledby="orderdishModelLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="orderdishModelLabel">Dish</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                            style="color: rgb(0, 112, 235)" ;>
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- body -->
+                                    </div>
+                                    <div class="modal-footer" style="padding: 12px 16px;">
+                                        <div class="col-12 d-flex justify-content-between">
+                                            <div class="d-flex">
+                                                <h5 class="quantity-text d-none d-md-block">Quantity</h5>
+                                                <div class="def-number-input number-input safari_only">
+                                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                                        class="minus"></button>
+                                                    <input class="quantity" min="1" name="quantity" value="1" type="number">
+                                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                                        class="plus"></button>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btn btn-primary">
+                                                    Add to bag
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                             <!--2-->
                             <div></div>
+
+
                         </div>
                     </div>
                 </section>
@@ -265,20 +400,39 @@
         </div>
         <!--About-->
         <div class="container">
-            <div id="two" ><h1 style="margin-top: 1000px;">Abount</h1></div>
+            <div id="two">
+                <h1 style="margin-top: 1000px;">Abount</h1>
+            </div>
         </div class="container">
         <!--Reviews-->
         <div class="container">
-            <div id="three" ><h1 style="margin-top: 1000px; height: 300px;">Views</h1></div>
+            <div id="three">
+                <h1 style="margin-top: 1000px; height: 300px;">Views</h1>
+            </div>
         </div>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/page-3.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        $('.myPopover').popover({
+            html: true,
+            content: function () {
+                var elementId = $(this).attr("data-popover-content");
+                return $(elementId).html();
+            }
+        });
+    </script>
 </body>
 
 </html>
