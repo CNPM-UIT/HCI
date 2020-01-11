@@ -18,7 +18,7 @@
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-    <title>Hello, world!</title>
+    <title>Yummy</title>
 </head>
 
 <body translate="no">
@@ -57,7 +57,7 @@
                             <strong>Sign In </strong>
                         </button>
                         <button class="btn align-items-center col-6 myPopover" type="button" data-toggle="popover"
-                            data-placement="left" data-html="true" data-trigger="focus" data-popover-content="#myPopoverContent">
+                            data-placement="left" data-html="true" data-popover-content="#myPopoverContent">
                             <i class="fa fa-shopping-basket " style="font-size: 19px;"></i>
                         </button>
                         <!-- Content for Popover: -->
@@ -86,8 +86,9 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center button-padding">
-                                <div class="btn btn-success">Process to Checkout
-                                </div>
+                                <!-- <button class="btn btn-success d-block"  onclick="window.location.href = 'page-3.html'">Process to Checkout
+                                </button> -->
+                                <a class="btn btn-success" href="/page-4.html">Process to Checkout</a>
                             </div>
                         </div>
                     </div>
@@ -323,7 +324,7 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-dismiss="modal">Cancel</button>
-                                            <button type="button" class="btn btn-primary">Continue</button>
+                                            <button type="button" class="btn btn-primary"  data-dismiss="modal">Continue</button>
                                         </div>
                                     </div>
                                 </div>
@@ -407,6 +408,91 @@
                             <!--2-->
                             <div>
                                 <h2 class="font-weight-bold">Benvenuto Tribeca Menu</h2>
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="w-50 col-6" style="padding: 4px;" data-toggle="modal"
+                                        data-target="#address">
+                                        <div class="position-relative top-dish"
+                                            style="height: 127px; background-image: url(assets/img/dish/k9huj4yovzyd7lofwdkf.webp); background-position: 50%;background-size: cover; background-repeat: no-repeat;border-radius: 3px; ">
+                                            <div class="w-100 h-100 d-flex align-items-end" style="padding: 8px;">
+                                                <div class="position-absolute box-cost" style="left: 0; top: 41px;">
+                                                    <span class="d-block"><a class="text-dark" href=""><strong>Fried Egg
+                                                                Sandwich</strong></a></span>
+                                                    <span><a class="text-dark" href=""><strong>$3.50+</strong></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-50 col-6" style="padding: 4px;" data-toggle="modal"
+                                        data-target="#orderdish">
+                                        <div class="position-relative top-dish"
+                                            style="height: 127px; background-image: url(assets/img/dish/cx2gmqqwnchnuzti27qa.jpg); background-position: 50%;background-size: cover; background-repeat: no-repeat;border-radius: 3px; ">
+                                            <div class="w-100 h-100 d-flex align-items-end" style="padding: 8px;">
+                                                <div class="position-absolute box-cost" style="left: 0; top: 41px;">
+                                                    <span class="d-block"><a class="text-dark" href=""><strong>Bagels</strong></a></span>
+                                                    <span><a class="text-dark" href=""><strong>$1.25+</strong></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-50" style="padding: 4px;">
+                                        <div class="position-relative top-dish"
+                                            style="height: 127px; background-image: url(assets/img/dish/wzfpr8b1yxwnxaeyumek.webp); background-position: 50%;background-size: cover; background-repeat: no-repeat;border-radius: 3px; ">
+                                            <div class="w-100 h-100 d-flex align-items-end" style="padding: 8px;">
+                                                <div class="position-absolute box-cost" style="left: 0; top: 41px;">
+                                                    <span class="d-block"><a class="text-dark" href=""><strong>Create Your Own Salad</strong></a></span>
+                                                    <span><a class="text-dark" href=""><strong>$9.95+</strong></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-50" style="padding: 4px;">
+                                        <div class="position-relative top-dish"
+                                            style="height: 127px; background-image: url(assets/img/dish/q2nleslzrfow5h4zkwsl.webp); background-position: 50%;background-size: cover; background-repeat: no-repeat;border-radius: 3px; ">
+                                            <div class="w-100 h-100 d-flex align-items-end" style="padding: 8px;">
+                                                <div class="position-absolute box-cost" style="left: 0; top: 41px;">
+                                                    <span class="d-block"><a class="text-dark" href=""><strong>Create Your Own Pasta</strong></a></span>
+                                                    <span><a class="text-dark" href=""><strong>$11.95+</strong></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal adress -->
+                                <div class="modal fade" id="address" tabindex="-1" role="dialog"
+                                    aria-labelledby="addressModelLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="addressModelLabel">Address</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                                    style="color: rgb(0, 112, 235)">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">Address</label>
+                                                        <input type="email" class="form-control"
+                                                            id="exampleFormControlInput1"
+                                                            placeholder="e,g. 555 Main St, New York NY 10018">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">Apt, suite, floor
+                                                            (optional)</label>
+                                                        <input type="email" class="form-control"
+                                                            id="exampleFormControlInput1" placeholder="e,g. 15F">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Cancel</button>
+                                                <button type="button" class="btn btn-primary"  data-dismiss="modal">Continue</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

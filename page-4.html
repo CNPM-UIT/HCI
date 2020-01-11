@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Yummy</title>
 </head>
 
 <body>
@@ -97,7 +97,7 @@
                     </div>
                     <span class="text-muted">$18.50</span>
                 </li>
-                
+
                 <li class="list-group-item d-flex justify-content-between bg-light">
                     <div class="text-success">
                         <h6 class="my-0">Promo code</h6>
@@ -185,7 +185,7 @@
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Delivery Instructions</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                          </div>
+                        </div>
                     </div>
                 </div>
 
@@ -232,10 +232,35 @@
                     </div>
                 </div>
                 <hr class="mb-4">
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Placer Your Order</button>
+                <button id="mot" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">Placer Your Order</button>
+
+                <!-- Modal -->
+
             </form>
         </div>
     </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Success</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div style="display: flex; justify-content: center; align-items: center; margin: 0; height: 150px;">
+                
+                    <i class="fas fa-check-circle" style="color: green; font-size: 60px;"></i>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="window.location.href = 'page-2.html'">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -248,6 +273,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <script src="assets/js/page-4.js"></script>
+
     <script>
         $('.myPopover').popover({
             html: true,
