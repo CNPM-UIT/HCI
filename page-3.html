@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/page-3.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/page-1.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
@@ -104,13 +105,38 @@
                             <strong>Sign In </strong>
                         </button>
                         <button class="btn align-items-center col-6 myPopover" type="button" data-toggle="popover"
-                            data-placement="bottom" data-trigger="focus" data-html="true"
-                            data-popover-content="#myPopoverContent">
+                            data-placement="left" data-html="true" data-popover-content="#myPopoverContent">
                             <i class="fa fa-shopping-basket " style="font-size: 19px;"></i>
                         </button>
                         <!-- Content for Popover: -->
                         <div id="myPopoverContent" class="bag-border d-none">
-                            <h5 class="bag-empty-text">Your bag is empty.</h5>
+                            <div class="button-padding">
+                                <h6 class="font-weight-bold" style="font-size: 50px;">Your order</h6>
+                            </div>
+                            <div class="border-bottom d-flex row button-padding" style="padding: 12px;">
+                                <div class="col-1">2</div>
+                                <div class="col-11 row">
+                                    <div class="col-5">
+                                        <a class="text-decoration-none" href="" style="color: #0070eb;">Fried Egg
+                                            Sandwich</a>
+                                    </div>
+                                    <div class="col-7 d-flex justify-content-between align-items-top">
+                                        <i class="fas fa-trash" style="color: #6b6b83;"></i>
+                                        <span>$21.90</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 justify-content-end d-flex button-padding">
+                                    <span>Lagre</span>
+                                </div>
+                                <div class="col-11 d-flex justify-content-between button-padding">
+                                    <span>Items subtotal: </span>
+                                    <span>$21.90</span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center button-padding">
+                                <div class="btn btn-success">Process to Checkout
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -179,7 +205,7 @@
                 </div>
             </div>
             <!--infor restaurant-->
-            <div class="" style="padding: 12px; margin: 0px 106px;">
+            <div class="respon-height" style="padding: 12px;">
                 <div class="container w-100 h-100">
                     <div class="d-flex">
                         <div class="d-inline-block d-flex-row">
@@ -195,7 +221,7 @@
                             <div>
                                 <div class="d-flex" style="height: 22px;">
                                     <div class="d-flex">
-                                        <div class="star" style="font-size: 20px; margin-right: 4px;">
+                                        <div class="star star-size" style="margin-right: 4px;">
                                             <ion-icon name="star"></ion-icon>
                                             <ion-icon name="star"></ion-icon>
                                             <ion-icon name="star"></ion-icon>
@@ -279,7 +305,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-50 col-6" style="padding: 4px;" data-toggle="modal" data-target="#orderdish">
+                                <div class="w-50 col-6" style="padding: 4px;" data-toggle="modal"
+                                    data-target="#orderdish">
                                     <div class="position-relative top-dish"
                                         style="height: 127px; background-image: url(assets/img/dish/k9huj4yovzyd7lofwdkf.webp); background-position: 50%;background-size: cover; background-repeat: no-repeat;border-radius: 3px; ">
                                         <div class="w-100 h-100 d-flex align-items-end" style="padding: 8px;">
@@ -353,46 +380,85 @@
                                 </div>
                             </div>
                             <!-- Model details dish-->
-                            <div class="modal fade" id="orderdish" tabindex="-1" role="dialog" aria-labelledby="orderdishModelLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="orderdishModelLabel">Dish</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-                                            style="color: rgb(0, 112, 235)" ;>
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <!-- body -->
-                                    </div>
-                                    <div class="modal-footer" style="padding: 12px 16px;">
-                                        <div class="col-12 d-flex justify-content-between">
-                                            <div class="d-flex">
-                                                <h5 class="quantity-text d-none d-md-block">Quantity</h5>
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                                        class="minus"></button>
-                                                    <input class="quantity" min="1" name="quantity" value="1" type="number">
-                                                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                        class="plus"></button>
+                            <div class="modal fade" id="orderdish" tabindex="-1" role="dialog"
+                                aria-labelledby="orderdishModelLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header"
+                                            style="background-image: url(assets/img/dish/k9huj4yovzyd7lofwdkf.webp); height: 127px;">
+                                            <h5 class="modal-title" id="orderdishModelLabel">Fried Egg Sandwich</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                                style="color: rgb(0, 112, 235)" ;>
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- body -->
+                                            <div style="padding: 14px 0px;">
+                                                <div
+                                                    style="background: #efeff2; border-radius: 4px; padding: 8px 16px;">
+                                                    <div>
+                                                        <h5 class="font-weight-bold">Choose a size</h5>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-check" style="margin: 6px;">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="exampleRadios" id="exampleRadios1" value="option1"
+                                                                checked style="font-size: 20px;">
+                                                            <label class="form-check-label" for="exampleRadios1">
+                                                                Small + $9.95
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check" style="margin: 6px;">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="exampleRadios" id="exampleRadios2" value="option2"
+                                                                style="font-size: 20px;">
+                                                            <label class="form-check-label" for="exampleRadios2">
+                                                                Large + $10.95
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                             <div>
-                                                <button type="button" class="btn btn-primary">
-                                                    Add to bag
-                                                </button>
+                                                <div class="form-group">
+                                                    <label class="font-weight-bold"
+                                                        for="exampleFormControlTextarea1">Special instructions</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="5" placeholder="Let us know here"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer" style="padding: 12px 16px; height: 70px;">
+                                            <div class="col-12 d-flex justify-content-between">
+                                                <div class="d-flex">
+                                                    <h5 class="quantity-text d-none d-md-block">Quantity</h5>
+                                                    <div class="def-number-input number-input safari_only">
+                                                        <button
+                                                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                                            class="minus"></button>
+                                                        <input class="quantity" min="1" name="quantity" value="1"
+                                                            type="number">
+                                                        <button
+                                                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                                            class="plus"></button>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                                        Add to bag
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                             <!--2-->
-                            <div></div>
-
-
+                            <div>
+                                <h2 class="font-weight-bold">Benvenuto Tribeca Info</h2>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -401,38 +467,346 @@
         <!--About-->
         <div class="container">
             <div id="two">
-                <h1 style="margin-top: 1000px;">Abount</h1>
-            </div>
-        </div class="container">
-        <!--Reviews-->
-        <div class="container">
-            <div id="three">
-                <h1 style="margin-top: 1000px; height: 300px;">Views</h1>
+                <div style="margin-top: 60px; margin-bottom: 10px;">
+                    <h2 class="font-weight-bold">Benvenuto Tribeca Info</h2>
+                    <div>
+                        <a href="" class="text-decoration-none category-text">24 Hours,</a>
+                        <a href="" class="text-decoration-none category-text"> Breakfast,</a>
+                        <a href="" class="text-decoration-none category-text"> Dinner</a>
+                        <a href="" class="text-decoration-none category-text"> Hamburgers,</a>
+                        <a href="" class="text-decoration-none category-text"> Healthy,</a>
+                        <a href="" class="text-decoration-none category-text"> Pasta,</a>
+                        <a href="" class="text-decoration-none category-text"> Salad,</a>
+                    </div>
+                    <div class="d-flex" style="font-size: 15px;">
+                        <i class="fas fa-dollar-sign"></i>
+                        <i class="fas fa-dollar-sign"></i>
+                        <i class="fas fa-dollar-sign dollar-color"></i>
+                        <i class="fas fa-dollar-sign dollar-color"></i>
+                        <i class="fas fa-dollar-sign dollar-color"></i>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 90px;">
+                    <div class="col-6" style="padding-bottom: 16px;">
+                        <div class="border-bottom">
+                            <img class="img-fluid map-google">
+                            <a
+                                href="http://maps.google.com/maps?saddr=New York, NY&daddr=369 Greenwich St, New York , NY, 10013">
+                                <div class="category-text" style="padding: 20px 0px;">
+                                    <span class="d-block">369 Greenwich St</span>
+                                    New York , NY 10013
+                                    <span class="d-block">0.50 mi</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="border-bottom" style="padding-bottom: 16px; padding-top: 15px;">
+                            <a href="" class="text-decoration-none">(908) 293-9300</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="border-bottom" style="padding: 16px;">
+                            <h5 style="color: #6b6b83; background-color: #fbfbfc; padding: 12px 0px;"><span>Hours</span>
+                            </h5>
+                            <div class="d-flex justify-content-between">
+                                <div>Today</div>
+                                <div>
+                                    <span class="d-block"> Delivery: 12:00am-11:59pm</span>
+                                    <span class="d-block" style="color: #6b6b83;"> Pickup: 12:00am-11:59pm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top: 24px;">
+                    <div>
+                        <h3 class="font-weight-bold">Restaurants in your area</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card">
+                                <div>
+                                    <div class="card-img-top img-fluid w-100"
+                                        style="background: url(assets/img/near/uootzhpmqbqipdhbgxf3.jpg); background-repeat: no-repeat; background-size: cover; height: 172px; widows: 348px;"
+                                        alt="Card image cap">
+                                        <div class="d-flex justify-content-end" style="padding: 12px 16px;">
+                                            <button class="text-center"
+                                                style="height: 36px; width: 36px; border-radius: 50%; border: 0px; color:rgba(0,0,0,.35);background-color: #fff;">
+                                                <i class="fas fa-bookmark" style="font-size: 18px;"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex" style="padding: 12px;">
+                                    <div class="w-100">
+                                        <div>
+                                            <a class="card-title">
+                                                <h5>Papaya Dog (Fulton St.)</h5>
+                                            </a>
+                                            <div class="cuisine">
+                                                <span>American, Hot Dogs...</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-sm-6 cuisine">
+                                                <div style="color: #000 "><span>20–30
+                                                        mins</span></div>
+                                                <div class="mt-2"><span>$10 min</span></div>
+                                            </div>
+                                            <div class="col-sm-6 d-flex justify-content-end">
+                                                <div class="text-center">
+                                                    <div class="star">
+                                                        <ion-icon name="star"></ion-icon>
+                                                        <ion-icon name="star"></ion-icon>
+                                                        <ion-icon name="star"></ion-icon>
+                                                        <ion-icon name="star"></ion-icon>
+                                                        <ion-icon name="star"></ion-icon>
+                                                    </div>
+                                                    <div><span class="cuisine">3368
+                                                            ratings</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <div>
+                                    <div class="card-img-top img-fluid w-100"
+                                        style="background: url(assets/img/near/okb7vggftrgic5ocjiml.jpg); background-repeat: no-repeat; background-size: cover; height: 172px; widows: 348px;"
+                                        alt="Card image cap">
+                                        <div class="d-flex justify-content-end" style="padding: 12px 16px;">
+                                            <button class="text-center"
+                                                style="height: 36px; width: 36px; border-radius: 50%; border: 0px; color:rgba(0,0,0,.35);background-color: #fff;">
+                                                <i class="fas fa-bookmark" style="font-size: 18px;"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex" style="padding: 12px;">
+                                    <div class="w-100">
+                                        <div>
+                                            <a class="card-title">
+                                                <h5>Papaya Dog (Fulton St.)</h5>
+                                            </a>
+                                            <div class="cuisine">
+                                                <span>American, Hot Dogs...</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-sm-6 cuisine">
+                                                <div style="color: #000 "><span>20–30
+                                                        mins</span></div>
+                                                <div class="mt-2"><span>$10 min</span></div>
+                                            </div>
+                                            <div class="col-sm-6 d-flex justify-content-end">
+                                                <div class="text-center">
+                                                    <div class="star">
+                                                        <ion-icon name="star"></ion-icon>
+                                                        <ion-icon name="star"></ion-icon>
+                                                        <ion-icon name="star"></ion-icon>
+                                                        <ion-icon name="star"></ion-icon>
+                                                        <ion-icon name="star"></ion-icon>
+                                                    </div>
+                                                    <div><span class="cuisine">3368
+                                                            ratings</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <div>
+                                    <div class="card-img-top img-fluid w-100"
+                                        style="background: url(assets/img/near/ylmauxcb9dyiaxgui4gy.jpg); background-repeat: no-repeat; background-size: cover; height: 172px; widows: 348px;"
+                                        alt="Card image cap">
+                                        <div class="d-flex justify-content-end" style="padding: 12px 16px;">
+                                            <button class="text-center"
+                                                style="height: 36px; width: 36px; border-radius: 50%; border: 0px; color:rgba(0,0,0,.35);background-color: #fff;">
+                                                <i class="fas fa-bookmark" style="font-size: 18px;"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex" style="padding: 12px;">
+                                    <div class="w-100">
+                                        <div>
+                                            <a class="card-title">
+                                                <h5>Papaya Dog (Fulton St.)</h5>
+                                            </a>
+                                            <div class="cuisine">
+                                                <span>American, Hot Dogs...</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-sm-6 cuisine">
+                                                <div style="color: #000 "><span>20–30
+                                                        mins</span></div>
+                                                <div class="mt-2"><span>$10 min</span></div>
+                                            </div>
+                                            <div class="col-sm-6 d-flex justify-content-end">
+                                                <div class="text-center">
+                                                    <div class="star">
+                                                        <ion-icon name="star"></ion-icon>
+                                                        <ion-icon name="star"></ion-icon>
+                                                        <ion-icon name="star"></ion-icon>
+                                                        <ion-icon name="star"></ion-icon>
+                                                        <ion-icon name="star"></ion-icon>
+                                                    </div>
+                                                    <div><span class="cuisine">3368
+                                                            ratings</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <!--Reviews-->
+        <div class="container" style="padding: 32px;">
+            <div id="three">
+                <div class="border-bottom-2" style="margin-bottom: 12px; padding-bottom: 12px; padding-top: 12px;">
+                    <div class="col-8">
+                        <h2 class="font-weight-bold" style="font-size: 28px;">Reviews for Benvenuto Tribeca</h2>
+                        <div style="margin-bottom: 16px;">
+                            <div class="star d-flex" style="font-size: 24px;">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                            </div>
+                            <span class="cuisine">169 ratings</span>
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <p style="margin-bottom: 16px;">Here's what people are saying:</p>
+                            <div class="row d-flex">
+                                <div class="col-2">
+                                    <span class="font-weight-bold d-block">92%</span>
+                                    <span class="text-span">Food was good</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="font-weight-bold d-block">88%</span>
+                                    <span class="text-span">Delivery was on time</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="font-weight-bold d-block">90%</span>
+                                    <span class="text-span">Order was accurate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end align-items-center" style="padding: 8px 0px">
+                    <div class="d-flex align-items-center">
+                        <label style="margin-right: 14px;margin-bottom: 0px; color: #6b6b83;">Sort:</label>
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle border rounded" data-toggle="dropdown"
+                                aria-expanded="false" type="button" id="dropdownMenuButton"
+                                style="font-size: 14px;">Most recent<span class="target"></span></button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Most recent</a>
+                                <a class="dropdown-item" href="#">Highest rates</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 200px;">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/page-3.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script>
-        $('.myPopover').popover({
-            html: true,
-            content: function () {
-                var elementId = $(this).attr("data-popover-content");
-                return $(elementId).html();
-            }
-        });
-    </script>
+                </div>
+            </div>
+        </div>
+        <!-- Start: Corporate Footer Clean -->
+        <footer class="page-footer" style="background-color: #3434d6;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <div class="responsiveFooter">Get to know us<br></div>
+                        <ul class="footer-links"
+                            style="font-family: graphik; font-size: 14px; color: rgb(255, 255, 255);">
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">About FoodHub<br></a></li>
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">Our Apps</a></li>
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">Our Blogs</a></li>
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="responsiveFooter">Contact Us</div>
+                        <ul class="footer-links"
+                            style="font-family: graphik;font-size: 14px;color: rgb(252, 252, 252);">
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">Facebook</a></li>
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">Twitter</a></li>
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">Instagram</a></li>
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">Youtube</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="responsiveFooter">Useful Links</div>
+                        <ul class="footer-links" style="font-family: graphik;font-size: 14px;">
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">Gift Cards</a></li>
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">FAQ</a></li>
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">Help</a></li>
+                        </ul>
+                        <ul class="footer-links">
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="responsiveFooter">Partner with us </div>
+                        <ul class="footer-links">
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">For restaurants</a></li>
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">For drivers</a></li>
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">Looking for driver rewards?</a>
+                            </li>
+                            <li><a href="#" style="color: #eaeaf3; font-size: 15px;">For corporate accounts</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-legal">
+                    <div class="float-md-right region">
+                        <a href="#"><img src="assets\img\united-states-flag.png">United States</a>
+                    </div>
+                    <div class="d-inline-block copyright">
+                        <p class="d-inline-block" style="color: azure;">Copyright © 2020. All rights reserved.
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- End: Corporate Footer Clean -->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="assets/js/page-3.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script>
+            $('.myPopover').popover({
+                html: true,
+                content: function () {
+                    var elementId = $(this).attr("data-popover-content");
+                    return $(elementId).html();
+                }
+            });
+        </script>
 </body>
 
 </html>

@@ -316,9 +316,10 @@
  .background {
       background-image: url("assets\img\food_delivery_.jpg")
  }
+ 
  .canhbien{
-      margin-top:3vh
- }
+     margin-top:0px
+}
  @media (min-width:768px){
      .page-footer .region{
          margin-bottom:0
@@ -336,10 +337,16 @@
      .chieucao{
          height:500px
      }
+     .canhbien{
+          margin-top:2vh
+     }
  }
  @media (min-width:992px){
      .chieucao{
          height:708px
+     }
+     .canhbien{
+          margin-top:2vh
      }
  }
  .khung-1{
@@ -372,11 +379,11 @@
       }
  }
  .responsiveBody{
-      height: calc(60vh - 60px);
+      height: calc(50vh - 60px);
  }
  @media (min-width: 576px){
       .responsiveBody{
-           height: calc(70vh - 60px);
+           height: calc(60vh - 60px);
       }
       .responsiveFooter{
            font-size: 20px;
@@ -397,7 +404,6 @@
       .headerClass{
            font-size: 50px;
            margin-bottom: 16px
-           
       }
       .tieude{
            font-size: 40px;

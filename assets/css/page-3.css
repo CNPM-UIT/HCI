@@ -21,6 +21,7 @@
 .star{
     color: #F4AF30;
 }
+
 .top-shadow{
     box-shadow: 0 0 0 1px rgba(67,41,163,.1), 0 1px 8px 0 rgba(67,41,163,.1);
 }
@@ -198,5 +199,54 @@
         .number-input.def-number-input.safari_only button:after {
             margin-top: -.3rem;
         }
+    }
+}
+
+.dollar-color{
+    color: #d4d4db;
+}
+.map-google{
+    width: 518px;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-image: url("https://maps.googleapis.com/maps/api/staticmap?size=518x100&center=40.719342,-74.010123&zoom=15&style=feature:poi%7Cvisibility:off&markers=size:mid%7Ccolor:red%7C40.719342,-74.010123&client=gme-grubhubinc&signature=yNhDggtqaDxWm0JjSYcH4zT-1LQ");
+}
+.border-bottom{
+    border-bottom: 1px solid rgba(67,41,163,.2);
+}
+.border-bottom-2{
+    border-bottom: 2px solid #8f8fa1;
+}
+.category-text{
+    font-size: 14px;
+}
+.text-span{
+    font-size: 12px;
+}
+
+.popover-body{
+    width: 300px;
+    height: 280px;
+}
+.button-padding{
+    padding: 10px;
+}
+.star-size{
+    font-size: 20px;
+}
+@media (max-width: 992px){
+    .star-size{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px){
+    .respon-height{
+        height: 120px;
+    }
+}
+@media (max-width: 576px){
+    .respon-height{
+        height: 166px;
     }
 }
