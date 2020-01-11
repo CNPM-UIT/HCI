@@ -259,6 +259,6 @@
 
 }
 
-.bookmark-button {
+.bookmark-button:hover {
     color: yellow;
 }
